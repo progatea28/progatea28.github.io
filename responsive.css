@@ -41,6 +41,20 @@
         margin: 0 12px 0;
     }
 
+    .navbar-nav .nav-link {
+        display: inline-block;
+    }
+
+    .navbar-nav .nav-item .mobile-toggle {
+        display: none;
+    }
+
+    .navbar .navbar-nav {
+        display: flex;
+        align-items: center;
+    }
+
+
     /* +-----------------------+ */
     /* |    Akhir Bagian 1     | */
     /* +-----------------------+ */
@@ -126,6 +140,19 @@
     .section-01 .box-wrapper {
         width: calc(25% - 24px);
         margin: 0 12px 0;
+    }
+
+    .navbar .navbar-nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-link {
+        display: inline-block;
+    }
+
+    .navbar-nav .nav-item .mobile-toggle {
+        display: none;
     }
 
     /* +-----------------------+ */
@@ -215,6 +242,19 @@
         margin: 0 12px 0;
     }
 
+    .navbar .navbar-nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-link {
+        display: inline-block;
+    }
+
+    .navbar-nav .nav-item .mobile-toggle {
+        display: none;
+    }
+
     /* +-----------------------+ */
     /* |    Akhir Bagian 1     | */
     /* +-----------------------+ */
@@ -282,8 +322,6 @@
     /* +-----------------------+ */
     /* |     Awal Bagian 1     | */
     /* +-----------------------+ */
-
-    /* .section-01 .box-hero {} */
 
     .section-01 .box-wrapper {
         width: calc(50% - 12px);
