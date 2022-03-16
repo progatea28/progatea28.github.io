@@ -20,9 +20,20 @@ const load = setInterval(()=>{
     }
 }, 250);
 
+var navWrapper = document.getElementById("mobile-nav");
+var btns = navWrapper.getElementsByClassName("nav-item");
+for (var j = 0; j < btns.length; j++) {
+    btns[j].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+    });
+}
+
 window.onscroll = ()=> {
-    headerEffect()
+    headerEffect();
 };
+
 function headerEffect() {
     const header = document.getElementById('header');
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {

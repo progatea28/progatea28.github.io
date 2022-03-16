@@ -225,8 +225,8 @@ header .navbar {
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link:active,
-.navbar-nav .nav-link.active {
-    color: #2487ce;
+.navbar-nav .nav-item.active .nav-link {
+  color: #2487ce;
 }
 
 
