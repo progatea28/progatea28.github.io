@@ -12,6 +12,46 @@
     margin: auto;
 }
 
+.row {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.box {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    border: #0d6efd 2px solid;
+    border-radius: 10px;
+    line-height: 40px;
+    width: 200px;
+}
+
+.featured {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.featured .btn-buy {
+    color: #0d6efd;
+}
+
+.box ul li {
+    list-style-type: none;
+}
+
+.na {
+    color: gray;
+    text-decoration: line-through;
+}
+
+.btn-buy {
+    text-decoration: none;
+    background-color: white;
+    border-radius: 3px;
+    padding: 5px 20px;
+}
 
 /* +-----------------------+ */
 /* | Akhir CSS Style Umum  | */
