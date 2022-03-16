@@ -383,7 +383,75 @@ header .navbar {
 /* +-----------------------+ */
 /* |     Awal Bagian 5     | */
 /* +-----------------------+ */
+footer {
+	font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Raleway", sans-serif;
+    color: #777777;
+    border-top: 2px solid #eee;
+}
+.footer-logo {
+  font-size: 30px;/*32*/
+  float:left;
+}
 
+.footer-left{
+	margin-top: 10px;
+	float:left;
+}
+
+.icon {
+  	padding:12px 24px;
+  	display:block;
+  	opacity: 0.7;
+	color:black;
+ }
+
+
+.fa-solid {
+  margin-right: 5px;
+}
+
+.footer-left li{
+	list-style: none;
+}
+
+.footer-center{
+	float: left;
+}
+
+.footer-center li{
+	padding-bottom:5px;
+}
+
+.footer-right{
+	float: left;
+	padding-right: 1rem;
+}
+
+.footer-right li{
+	padding-bottom:5px;
+}
+
+button{
+	background-color: #2487ce;
+    padding: 10px 30px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+    cursor: pointer;
+
+.newsletter {
+	padding-bottom:6rem;
+	float:left;
+}
+.newsletter-title{
+	font-size: var(--font-size-lg);
+}
+.newsletter-description{
+	margin-bottom: 3rem;
+}
 
 /* +-----------------------+ */
 /* |    Akhir Bagian 5     | */
