@@ -17,7 +17,29 @@
     /* +-----------------------+ */
     /* |     Awal Bagian 1     | */
     /* +-----------------------+ */
+    .section-01 .col {
+        width: 53%;
+        margin: auto;
+    }
 
+    .section-01 .title-hero {
+        font-size: 56px;
+        line-height: 72px;
+    }
+
+    .section-01 .desc-hero {
+        font-size: 22px;
+    }
+
+    .section-01 .box-hero {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .section-01 .box-wrapper {
+        width: 25%;
+        margin: 0 12px 0;
+    }
 
     /* +-----------------------+ */
     /* |    Akhir Bagian 1     | */
@@ -87,6 +109,24 @@
     /* |     Awal Bagian 1     | */
     /* +-----------------------+ */
 
+    .section-01 .col {
+        width: 53%;
+        margin: auto;
+    }
+
+    .section-01 .title-hero {
+        font-size: 56px;
+        line-height: 72px;
+    }
+
+    .section-01 .desc-hero {
+        font-size: 22px;
+    }
+
+    .section-01 .box-wrapper {
+        width: calc(25% - 24px);
+        margin: 0 12px 0;
+    }
 
     /* +-----------------------+ */
     /* |    Akhir Bagian 1     | */
@@ -156,6 +196,24 @@
     /* |     Awal Bagian 1     | */
     /* +-----------------------+ */
 
+    .section-01 .col {
+        width: 75%;
+        margin: auto;
+    }
+
+    .section-01 .title-hero {
+        font-size: 56px;
+        line-height: 72px;
+    }
+
+    .section-01 .desc-hero {
+        font-size: 22px;
+    }
+
+    .section-01 .box-wrapper {
+        width: calc(25% - 24px);
+        margin: 0 12px 0;
+    }
 
     /* +-----------------------+ */
     /* |    Akhir Bagian 1     | */
@@ -225,6 +283,13 @@
     /* |     Awal Bagian 1     | */
     /* +-----------------------+ */
 
+    /* .section-01 .box-hero {} */
+
+    .section-01 .box-wrapper {
+        width: calc(50% - 12px);
+        margin-left: 12px;
+        margin-right: 12px;
+    }
 
     /* +-----------------------+ */
     /* |    Akhir Bagian 1     | */
