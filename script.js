@@ -2,6 +2,51 @@
 /* |     Awal Bagian 1     | */
 /* +-----------------------+ */
 
+const textLoading = document.getElementById('text-loading');
+const text = "A28";
+let i = 1;
+let maju = true;
+const load = setInterval(()=>{
+    if (i == 3){
+        maju = false;
+    }else if (i == 0){
+        maju = true;
+    }
+    textLoading.innerHTML = text.substr(0, i);
+    if (maju){
+        i++;
+    }else {
+        i--;
+    }
+}, 250);
+
+window.onscroll = ()=> {
+    headerEffect()
+};
+function headerEffect() {
+    const header = document.getElementById('header');
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        header.style.boxShadow = '0px 2px 15px rgb(18 66 101 / 8%)';
+        header.style.borderColor = '#FFF';
+    }else {
+        header.style.borderColor = '#e6f2fb';
+        header.style.boxShadow = 'none';
+    }
+}
+
+const navShow = document.getElementById('mobile-nav');
+const toggleNav = document.getElementById('toggle-nav');
+toggleNav.addEventListener('click', ()=>{
+    navShow.classList.toggle('nav-mobile');
+    if (navShow.classList.contains('nav-mobile')){
+        toggleNav.classList.remove('bx-menu');
+        toggleNav.classList.add('bx-x');
+    }else {
+        toggleNav.classList.remove('bx-x');
+        toggleNav.classList.add('bx-menu');
+    }
+})
+
 
 /* +-----------------------+ */
 /* |    Akhir Bagian 1     | */

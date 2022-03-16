@@ -5,6 +5,24 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #444444;
+    font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
 .container {
@@ -63,6 +81,304 @@
 /* |     Awal Bagian 1     | */
 /* +-----------------------+ */
 
+/* Loading Style */
+#loading-a28 {
+    font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10rem;
+    background-color: rgba(10, 38, 58, 0.9);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 999;
+    color: #fff;
+}
+
+#text-loading {
+    font-weight: 900;
+}
+
+#cursor-loading {
+    font-weight: 100;
+    animation: cursor-loading .5s ease-in-out infinite;
+}
+
+@keyframes cursor-loading {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Navbar Style */
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #e6f2fb;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.navbar .title-navbar {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    color: #16507b;
+    line-height: 1;
+    display: inline-block;
+    letter-spacing: 0.5px;
+}
+
+.navbar .nav-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #16507b;
+    padding: 55px 15px 15px;
+}
+
+.navbar .nav-mobile .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    height: 100%;
+    padding: 20px;
+}
+
+.navbar .nav-mobile .navbar-nav .mobile-toggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+}
+
+.navbar .nav-mobile .navbar-nav .nav-item {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.navbar .nav-mobile .navbar-nav .nav-link {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.navbar .nav-mobile .navbar-nav .button.nav-link {
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+    padding: 8px 20px;
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar-nav .mobile-toggle {
+    font-size: 28px;
+    transition: all .5s ease;
+    color: #124265;
+    cursor: pointer;
+}
+
+.navbar-nav .nav-link {
+    display: none;
+    font-size: 14px;
+    color: #444444;
+    padding: 10px 0 10px 30px;
+    color: #16507b;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:active,
+.navbar-nav .nav-link.active {
+    color: #2487ce;
+}
+
+
+.nav-item .button {
+    padding: 8px 20px;
+    background-color: #2487ce;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 30px;
+    white-space: nowrap;
+}
+
+.nav-item .button:hover {
+    opacity: 0.9;
+    color: #fff;
+}
+
+/* Hero Style */
+
+.text-center {
+    text-align: center !important;
+}
+
+.section-01 {
+    background-image: url('img/hero-bg.jpg');
+    padding: 80px 0;
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    background-position: top center;
+    background-attachment: fixed;
+    overflow: hidden;
+
+}
+
+.section-01::before {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.section-01 .col {
+    width: 100%;
+    margin: auto;
+}
+
+.section-01 .heading-hero {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.section-01 .title-hero {
+    font-size: 28px;
+    font-weight: 700;
+    color: #124265;
+    margin-top: 80px;
+    line-height: 36px;
+}
+
+.section-01 .desc-hero {
+    color: #525252;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.section-01 .button {
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 50px;
+    border-radius: 5px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #2487ce;
+    transition: 0.5s;
+}
+
+.section-01 .button:hover {
+    opacity: 0.9;
+}
+
+/* Box Hero Style */
+
+.section-01 .box-hero {
+    margin-top: 100px;
+    margin-left: -12px;
+    margin-right: -12px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+.section-01 .box-wrapper {
+    padding: 50px 30px;
+    background-color: #fff;
+    box-shadow: 0 0 29px 0 rgba(18 66 101 / 8%);
+    border-radius: 10px;
+    width: 100%;
+    margin: 25px 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+.section-01 .box-wrapper:hover {
+    transform: translateZ(0);
+    transform: scale(1.05);
+    opacity: 1;
+    transition-property: opacity, transform;
+}
+
+.section-01 .box-icon {
+    font-size: 36px;
+    color: #2487ce;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+    line-height: 1;
+}
+
+.section-01 .box-link {
+    display: inline-block;
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #124265;
+    font-weight: 600;
+}
+
+.section-01 .box-wrapper:hover .box-link,
+.section-01 .box-link:hover {
+    color: #2487ce;
+}
+
+.section-01 .box-wrapper p {
+    font-size: 15px;
+    line-height: 1.7;
+}
 
 /* +-----------------------+ */
 /* |    Akhir Bagian 1     | */
@@ -74,23 +390,333 @@
 /* +-----------------------+ */
 /* |     Awal Bagian 2     | */
 /* +-----------------------+ */
+    /*Section General*/
+    section {
+        padding: 80px 0;
+        overflow: hidden;
+      }
+      
+      .section-bg {
+        background-color: #f8fbfe;
+      }
+      
+      .section-title {
+        text-align: center;
+        padding-bottom: 30px;
+      }
+      .section-title h2 {
+        font-size: 32px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        padding-bottom: 0;
+        color: #124265;
+      }
+      .section-title p {
+        margin-bottom: 0;
+        font-size: 14px;
+        color: #919191;
+      }
 
+    /* About */
+    .about .about-desc{
+
+    }
+
+    .about .desc {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        
+    }
+    .about-title {
+      text-align: center;
+      padding-bottom: 30px;
+    }
+    .about h2 {
+      font-size: 32px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      padding-bottom: 0;
+      color: #124265;
+    }
+    .section-title p {
+      margin-bottom: 0;
+      font-size: 14px;
+      color: #919191;
+    }
+    .about .content h3 {
+        font-weight: 600;
+        font-size: 26px;
+      }
+      .about .content ul {
+        list-style: none;
+        padding: 0;
+      }
+      .about .content ul li {
+        padding-left: 28px;
+        position: relative;
+      }
+      .about .content ul li + li {
+        margin-top: 10px;
+      }
+      .about .content ul i {
+        position: absolute;
+        left: 0;
+        top: 2px;
+        font-size: 20px;
+        color: #2487ce;
+        line-height: 1;
+      }
+      .about .content p:last-child {
+        margin-bottom: 0;
+      }
+      .about .content .btn-learn-more {
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 12px 32px;
+        border-radius: 5px;
+        transition: 0.3s;
+        line-height: 1;
+        color: #2487ce;
+        -webkit-animation-delay: 0.8s;
+        animation-delay: 0.8s;
+        margin-top: 20px;
+        border: 2px solid #2487ce;
+      }
+      .about .content .btn-learn-more:hover {
+        background: #2487ce;
+        color: #fff;
+        text-decoration: none;
+      }
+
+
+    /* Count */
+    .counts {
+        padding: 60px 0;
+        width: 100%;
+        text-align: center;
+      }
+
+      .counts .count-box{
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 1;
+      }
+
+      .counts .count-box .box-wrapper {
+        float:left;
+        width:25%;
+      }
+      .counts .count-box .box-wrapper span {
+        font-size: 48px;
+        line-height: 48px;
+        display: block;
+        font-weight: 700;
+        color: #124265;
+        margin-left: 80px;
+        margin: auto;
+      }
+      .counts .count-box .box-wrapper p {
+        padding: 8px 0 0 0;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        color: #1e6ca6;
+      }
+    
+    /*About Video*/
+    .about-video .video-wrapper{
+        position:relative;
+        padding: 20px;
+        
+    }
+
+    .about-video .video-wrapper iframe{
+         width:100%; 
+  }
+
+    .about-video .content {
+        font-size: 15px;
+      }
+      .about-video .content h3 {
+        font-weight: 700;
+        font-size: 24px;
+        color: #124265;
+      }
+      .about-video .content ul {
+        list-style: none;
+        padding: 0;
+      }
+      .about-video .content ul li {
+        padding-bottom: 10px;
+        padding-left: 28px;
+        position: relative;
+      }
+      .about-video .content ul i {
+        font-size: 24px;
+        color: #2487ce;
+        position: absolute;
+        left: 0;
+        top: -2px;
+      }
+      .about-video .content p:last-child {
+        margin-bottom: 0;
+      }
+     
+      
+      @-webkit-keyframes pulsate-btn {
+        0% {
+          transform: scale(0.6, 0.6);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1, 1);
+          opacity: 0;
+        }
+      }
+      
+      @keyframes pulsate-btn {
+        0% {
+          transform: scale(0.6, 0.6);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1, 1);
+          opacity: 0;
+        }
+      }
+
+    /*Client*/
+    .clients {
+        padding: 15px 0;
+        text-align: center;
+      }
+      .clients img {
+        max-width: 15%;
+        transition: all 0.4s ease-in-out;
+        display: inline-block;
+        padding: 15px 0;
+        filter: grayscale(100);
+        float:left;
+        padding: 20px;
+        align:center;
+      }
+      .clients img:hover {
+        filter: none;
+        transform: scale(1.15);
+      }
+      @media (max-width: 768px) {
+        .clients img {
+          max-width: 40%;
+        }
+      }
 
 /* +-----------------------+ */
 /* |    Akhir Bagian 2     | */
 /* +-----------------------+ */
 
 
-
 /* +-----------------------+ */
 /* |     Awal Bagian 3     | */
 /* +-----------------------+ */
+.lesson-wrapper {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
 
+  .container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    
+  }
+  
+  .heading {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: #5f5d60;
+  }
 
+  
+  .heading h2 {
+    font-weight: normal;
+  }
+  
+  .lesson {
+    float: left;
+    width: 25%;
+  }
+  
+  
+  
+  img{
+    width: 150px;
+    border-radius: 5rem;
+  }
+
+  .lesson-icon p {
+    width: 100%;
+    color: #b3aeb5;
+    font-weight: bold;
+  }
+  
+  .text-contents {
+    width: 80%;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 15px;
+    color: #b3aeb5;
+  }
+  
+  .heading h3 {
+    font-weight: normal;
+  }
+  
+  .message-wrapper {
+    margin-top: 150px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 80px;
+    text-align: center;
+  }
+  
+  .message {
+    padding: 15px 40px;
+    background-color: #5dca88;
+    cursor: pointer;
+    box-shadow: 0 7px #1a7940;
+  }
+  
+  .message:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
 /* +-----------------------+ */
 /* |    Akhir Bagian 3     | */
 /* +-----------------------+ */
-
 
 
 /* +-----------------------+ */
@@ -127,7 +753,76 @@
 /* +-----------------------+ */
 /* |     Awal Bagian 5     | */
 /* +-----------------------+ */
+footer {
+	font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Raleway", sans-serif;
+    color: #777777;
+    border-top: 2px solid #eee;
+}
+.footer-logo {
+  font-size: 30px;/*32*/
+  float:left;
+}
 
+.footer-left{
+	margin-top: 10px;
+	float:left;
+}
+
+.icon {
+  	padding:12px 24px;
+  	display:block;
+  	opacity: 0.7;
+	color:black;
+ }
+
+
+.fa-solid {
+  margin-right: 5px;
+}
+
+.footer-left li{
+	list-style: none;
+}
+
+.footer-center{
+	float: left;
+}
+
+.footer-center li{
+	padding-bottom:5px;
+}
+
+.footer-right{
+	float: left;
+	padding-right: 1rem;
+}
+
+.footer-right li{
+	padding-bottom:5px;
+}
+
+button{
+	background-color: #2487ce;
+    padding: 10px 30px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.newsletter {
+	padding-bottom:6rem;
+	float:left;
+}
+.newsletter-title{
+	font-size: var(--font-size-lg);
+}
+.newsletter-description{
+	margin-bottom: 3rem;
+}
 
 /* +-----------------------+ */
 /* |    Akhir Bagian 5     | */
