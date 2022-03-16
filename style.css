@@ -56,7 +56,27 @@
 /* +-----------------------+ */
 /* |     Awal Bagian 4     | */
 /* +-----------------------+ */
+.section-title {
+    text-align: center;
+    margin: 20px 0px;
+}
 
+.member {
+    align-content: center;
+}
+
+.member-img{
+    align-content: center;
+}
+
+.member-info img {
+    width: 50%;
+
+}
+
+.member-info {
+    text-align: center;
+}
 
 /* +-----------------------+ */
 /* |    Akhir Bagian 4     | */
