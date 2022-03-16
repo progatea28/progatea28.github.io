@@ -350,7 +350,232 @@ header .navbar {
 /* +-----------------------+ */
 /* |     Awal Bagian 2     | */
 /* +-----------------------+ */
+    /*Section General*/
+    section {
+        padding: 80px 0;
+        overflow: hidden;
+      }
+      
+      .section-bg {
+        background-color: #f8fbfe;
+      }
+      
+      .section-title {
+        text-align: center;
+        padding-bottom: 30px;
+      }
+      .section-title h2 {
+        font-size: 32px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        padding-bottom: 0;
+        color: #124265;
+      }
+      .section-title p {
+        margin-bottom: 0;
+        font-size: 14px;
+        color: #919191;
+      }
 
+    /* About */
+    .about .about-desc{
+
+    }
+
+    .about .desc {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        
+    }
+    .about-title {
+      text-align: center;
+      padding-bottom: 30px;
+    }
+    .about h2 {
+      font-size: 32px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      padding-bottom: 0;
+      color: #124265;
+    }
+    .section-title p {
+      margin-bottom: 0;
+      font-size: 14px;
+      color: #919191;
+    }
+    .about .content h3 {
+        font-weight: 600;
+        font-size: 26px;
+      }
+      .about .content ul {
+        list-style: none;
+        padding: 0;
+      }
+      .about .content ul li {
+        padding-left: 28px;
+        position: relative;
+      }
+      .about .content ul li + li {
+        margin-top: 10px;
+      }
+      .about .content ul i {
+        position: absolute;
+        left: 0;
+        top: 2px;
+        font-size: 20px;
+        color: #2487ce;
+        line-height: 1;
+      }
+      .about .content p:last-child {
+        margin-bottom: 0;
+      }
+      .about .content .btn-learn-more {
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 12px 32px;
+        border-radius: 5px;
+        transition: 0.3s;
+        line-height: 1;
+        color: #2487ce;
+        -webkit-animation-delay: 0.8s;
+        animation-delay: 0.8s;
+        margin-top: 20px;
+        border: 2px solid #2487ce;
+      }
+      .about .content .btn-learn-more:hover {
+        background: #2487ce;
+        color: #fff;
+        text-decoration: none;
+      }
+
+
+    /* Count */
+    .counts {
+        padding: 60px 0;
+        width: 100%;
+        text-align: center;
+      }
+
+      .counts .count-box{
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 1;
+      }
+
+      .counts .count-box .box-wrapper {
+        float:left;
+        width:25%;
+      }
+      .counts .count-box .box-wrapper span {
+        font-size: 48px;
+        line-height: 48px;
+        display: block;
+        font-weight: 700;
+        color: #124265;
+        margin-left: 80px;
+        margin: auto;
+      }
+      .counts .count-box .box-wrapper p {
+        padding: 8px 0 0 0;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        color: #1e6ca6;
+      }
+    
+    /*About Video*/
+    .about-video .video-wrapper{
+        position:relative;
+        padding: 20px;
+        
+    }
+
+    .about-video .video-wrapper iframe{
+         width:100%; 
+  }
+
+    .about-video .content {
+        font-size: 15px;
+      }
+      .about-video .content h3 {
+        font-weight: 700;
+        font-size: 24px;
+        color: #124265;
+      }
+      .about-video .content ul {
+        list-style: none;
+        padding: 0;
+      }
+      .about-video .content ul li {
+        padding-bottom: 10px;
+        padding-left: 28px;
+        position: relative;
+      }
+      .about-video .content ul i {
+        font-size: 24px;
+        color: #2487ce;
+        position: absolute;
+        left: 0;
+        top: -2px;
+      }
+      .about-video .content p:last-child {
+        margin-bottom: 0;
+      }
+     
+      
+      @-webkit-keyframes pulsate-btn {
+        0% {
+          transform: scale(0.6, 0.6);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1, 1);
+          opacity: 0;
+        }
+      }
+      
+      @keyframes pulsate-btn {
+        0% {
+          transform: scale(0.6, 0.6);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1, 1);
+          opacity: 0;
+        }
+      }
+
+    /*Client*/
+    .clients {
+        padding: 15px 0;
+        text-align: center;
+      }
+      .clients img {
+        max-width: 15%;
+        transition: all 0.4s ease-in-out;
+        display: inline-block;
+        padding: 15px 0;
+        filter: grayscale(100);
+        float:left;
+        padding: 20px;
+        align:center;
+      }
+      .clients img:hover {
+        filter: none;
+        transform: scale(1.15);
+      }
+      @media (max-width: 768px) {
+        .clients img {
+          max-width: 40%;
+        }
+      }
 
 /* +-----------------------+ */
 /* |    Akhir Bagian 2     | */
