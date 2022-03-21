@@ -43,7 +43,6 @@ const load = setInterval(()=>{
 
 window.onscroll = ()=> {
     headerEffect();
-    document.getElementById('help').innerHTML = document.documentElement.scrollTop;
     countsEffect();
     if (window.innerWidth > 992){
         if (document.body.scrollTop > 5821 || document.documentElement.scrollTop > 5821) {
