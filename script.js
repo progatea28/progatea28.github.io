@@ -1,7 +1,3 @@
-/* +-----------------------+ */
-/* |     Awal Bagian 1     | */
-/* +-----------------------+ */
-
 // Variable
 const counts = document.getElementById('counts');
 const precounter = counts.querySelectorAll('.precounter');
