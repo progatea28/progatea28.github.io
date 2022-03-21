@@ -1,1 +1,269 @@
+/* Responsive Tablet */
 
+@media (max-width: 992px) {
+    /* COMMON STYLE */
+
+    .container {
+        max-width: 960px;
+        width: 90%;
+    }
+
+    /* +-----------------------+ */
+    /* |     Awal Bagian 1     | */
+    /* +-----------------------+ */
+
+    /* NAVBAR STYLE */
+
+    .navbar-nav .nav-link {
+        display: none;
+    }
+
+    .navbar-nav .mobile-toggle {
+        display: block;
+    }
+
+    /* HERO STYLE */
+
+    .section-01 .heading-hero {
+        width: 100%;
+    }
+
+    .section-01 .title-hero {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .section-01 .desc-hero {
+        font-size: 18px;
+    }
+
+    .section-01 .box-wrapper {
+        width: calc(50% - 24px);
+        margin-bottom: 24px;
+    }
+
+    /* +-----------------------+ */
+    /* |    Akhir Bagian 1     | */
+    /* +-----------------------+ */
+
+
+    /* +-----------------------+ */
+    /* |     Awal Bagian 2     | */
+    /* +-----------------------+ */
+
+    /* ABOUT STYLE */
+    .about-content .content-left {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .about-content .content-right {
+        width: 100%;
+    }
+
+    /* CLIENTS STYLE */
+    .clients .align-items-center {
+        width: calc(100% / 3);
+    }
+
+
+    /* +-----------------------+ */
+    /* |    Akhir Bagian 2     | */
+    /* +-----------------------+ */
+
+
+
+    /* +-----------------------+ */
+    /* |     Awal Bagian 3     | */
+    /* +-----------------------+ */
+
+    /* Service */
+
+    .service-content .service-box {
+        width: calc(100% / 2 - 24px);
+        margin-bottom: 24px;
+    }
+
+    /* Portofolio */
+    .portofolio-desc .portofolio-img {
+        width: calc(100% / 2 - 24px);
+    }
+
+    /* +-----------------------+ */
+    /* |    Akhir Bagian 3     | */
+    /* +-----------------------+ */
+
+
+
+    /* +-----------------------+ */
+    /* |     Awal Bagian 4     | */
+    /* +-----------------------+ */
+
+    /* Team */
+
+    .team .team-content .box-team {
+        width: calc(100% / 2 - 24px);
+    }
+
+    /* Pricing */
+
+    .pricing .box-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .pricing .box-wrapper .box {
+        width: calc(100% / 2 - 25px);
+        margin-bottom: 24px;
+    }
+
+    /* +-----------------------+ */
+    /* |    Akhir Bagian 4     | */
+    /* +-----------------------+ */
+
+
+
+    /* +-----------------------+ */
+    /* |     Awal Bagian 5     | */
+    /* +-----------------------+ */
+    .contact-desc .contact-address {
+        width: 50%;
+    }
+
+    .contact-desc .contact-form {
+        width: 50%;
+    }
+
+    .contact-form .form-flex input:nth-child(1) {
+        margin-right: 0px;
+    }
+
+    .contact-form .form-flex input:nth-child(2) {
+        margin-left: 0px;
+    }
+
+    .contact-form .form-flex {
+        flex-direction: column;
+    }
+
+    /* +-----------------------+ */
+    /* |    Akhir Bagian 5     | */
+    /* +-----------------------+ */
+}
+
+/* Responsive Handphone */
+@media (max-width: 576px) {
+
+    /* COMMON STYLE */
+    .container {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* +-----------------------+ */
+    /* |     Awal Bagian 1     | */
+    /* +-----------------------+ */
+
+    /* HERO STYLE */
+
+    .section-01 .box-wrapper {
+        width: 100%;
+        margin: 24px 0;
+    }
+
+    /* FOOTER STYLE */
+    .footer .copyright {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer .footer-icon {
+        margin-right: 20px;
+        margin-left: 0;
+    }
+
+    /* +-----------------------+ */
+    /* |    Akhir Bagian 1     | */
+    /* +-----------------------+ */
+
+
+    /* +-----------------------+ */
+    /* |     Awal Bagian 2     | */
+    /* +-----------------------+ */
+
+    /* CLIENTS STYLE */
+    .clients .align-items-center {
+        width: calc(100% / 2);
+    }
+
+    /* +-----------------------+ */
+    /* |    Akhir Bagian 2     | */
+    /* +-----------------------+ */
+
+
+
+    /* +-----------------------+ */
+    /* |     Awal Bagian 3     | */
+    /* +-----------------------+ */
+
+    /* Service */
+
+    .service-content .service-box {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    /* Potofolio */
+    .portofolio-desc .portofolio-img {
+        width: 100%;
+    }
+
+    /* +-----------------------+ */
+    /* |    Akhir Bagian 3     | */
+    /* +-----------------------+ */
+
+
+
+    /* +-----------------------+ */
+    /* |     Awal Bagian 4     | */
+    /* +-----------------------+ */
+
+    /* Team */
+
+    .team .team-content .box-team {
+        width: 100%;
+    }
+
+    /* Pricing */
+
+    .pricing .box-wrapper .box {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    /* +-----------------------+ */
+    /* |    Akhir Bagian 4     | */
+    /* +-----------------------+ */
+
+
+
+    /* +-----------------------+ */
+    /* |     Awal Bagian 5     | */
+    /* +-----------------------+ */
+
+    .contact-content .contact-desc {
+        flex-direction: column;
+    }
+
+    .contact-desc .contact-address {
+        width: 100%;
+    }
+
+    .contact-desc .contact-form {
+        width: 100%;
+    }
+
+    /* +-----------------------+ */
+    /* |    Akhir Bagian 5     | */
+    /* +-----------------------+ */
+}

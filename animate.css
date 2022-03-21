@@ -1,0 +1,29 @@
+@keyframes melayangKeAtas {
+    0% {
+        bottom: 100px;
+    }
+
+    100% {
+        bottom: 100vh;
+    }
+}
+
+@keyframes zoomOut {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeUp {
+    0% {
+        transform: translateY(5rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
